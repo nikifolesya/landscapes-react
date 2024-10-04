@@ -1,7 +1,7 @@
 import './header.css'
 
 
-function Home() {
+function Header() {
     const menuLinksLeft = [
         { 
             id: 1,
@@ -38,4 +38,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Header
