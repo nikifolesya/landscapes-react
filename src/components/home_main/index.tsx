@@ -21,12 +21,12 @@ export const HomeMain = () => {
 
             <div className={styles.content}>
                 <div className={styles.image}>
-                    <img src="img1.jpg" alt="Landmarks" />
-                    <div className={styles.info_cards}>
+                    <img src="img1.svg" alt="Landmarks" />
+                    {/* <div className={styles.info_cards}>
                         <div className={styles.info_card}>Info</div>
                         <div className={styles.info_card}>Info</div>
                         <div className={styles.info_card}>Info</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

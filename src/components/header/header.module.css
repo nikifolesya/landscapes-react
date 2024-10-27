@@ -4,7 +4,7 @@
 .header {
     margin: 0;
     background-color: #ffffff;
-    height: 80px;
+    height: 100px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -31,9 +31,9 @@ li {
 
 .button_header {
     margin-left: 20px;
-    padding: 10px 18px;
+    padding: 14px 25px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     color: #FFB752;
     text-decoration: none;
@@ -50,9 +50,9 @@ li {
 
 .special_button {
     margin-left: 20px;
-    padding: 11px 27px 11px 27px;
+    padding: 16px 30px 16px 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     color: #CE401C;
     text-decoration: none;
@@ -63,7 +63,7 @@ li {
 }
 
 .special_button:hover {
-    padding: 11px 26px 11px 26px;
+    padding: 16px 29px 16px 29px;
     font-weight: 600;
     background-color: #FFB752;
     color: #CE401C;
