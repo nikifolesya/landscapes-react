@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .container {
     background-color: #ffffff;
+    padding-bottom: 30px;
 }
 
 .container h1 {
@@ -20,19 +13,56 @@
 }
 
 .content {
-    text-align: center;
+    text-align: center; /* Центрируем весь контент */
     width: 100vw;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
-    padding: 0px;
+    flex-direction: row; /* Размещаем блоки в строку */
+    justify-content: space-between; /* Разделяем на равное расстояние */
+    align-items: center; /* Выравниваем по вертикали */
+    gap: 0px; /* Отступ между блоками */
+    height: 80vh; /* Растягиваем контейнер на высоту экрана */
 }
 
 .yandexmap {
-    width: 500px;
-    height: 500px;
-    margin-left: 30px;
+    margin-left: 80px;
+    flex: 1; /* Карта занимает равное пространство */
     border-radius: 50px;
+    max-width: 50%; /* Ограничиваем ширину карты */
+}
+
+.cards {
+    margin-right: 50px;
+    flex: 1; /* Карточки занимают равное пространство */
+    display: flex;
+    flex-direction: row; /* Карточки в ряд */
+    flex-wrap: wrap; /* Переносим карточки на следующую строку при необходимости */
+    justify-content: space-evenly; /* Равномерное распределение карточек */
+    gap: 5px; /* Расстояние между карточками */
+    max-width: 50%; /* Ограничиваем ширину */
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.gradient {
+    pointer-events: none;
+    position: absolute;
+    width: 770px;
+    height: 561px;
+    right: 135px;
+    top: -90px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.gradient1 {
+    position: absolute;
+}
+
+
+
+.gradient2 {
+    position: absolute;
 }

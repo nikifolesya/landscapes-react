@@ -1,35 +1,42 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-// import React from 'react';
-// import ymaps from 'yandex-maps';
+import { useEffect, useState } from 'react';
 
-export const YandexMap = () => {
-  // координаты центра карты
-  const center = [55.7558, 37.6173];
+export const YandexMap = ({ coordinates }: { coordinates: [number, number] }) => {
+    const [mapState, setMapState] = useState({
+        center: coordinates,
+        zoom: 10,
+    });
 
-  const mapContainerStyle = {
-    width: '500px',
-    height: '500px',
-    borderRadius: '50px', // Добавьте скругление
-};
+    useEffect(() => {
+        setMapState({
+            center: coordinates,
+            zoom: 10,
+        });
+    }, [coordinates]);
 
+    const mapContainerStyle = {
+        width: '600px',
+        height: '600px',
+        borderRadius: '50px',
+        overflow: 'hidden',
+    };
 
-  return (
-    <YMaps query={{ apikey: '55560862-2dbf-47f8-9076-5dd76adc09a0' }}>
-      <Map
-        defaultState={{ center, zoom: 10 }}
-        style={mapContainerStyle}
-      >
-        {/* Добавление маркера на центр карты */}
-        <Placemark
-                    geometry={center}
+    return (
+        <YMaps query={{ apikey: '55560862-2dbf-47f8-9076-5dd76adc09a0' }}>
+            <Map
+                state={mapState}
+                style={mapContainerStyle}
+            >
+                <Placemark
+                    geometry={coordinates}
                     options={{
                         iconLayout: 'default#image',
-                        iconImageHref: '/mark.svg', // Замените на URL вашего изображения
+                        iconImageHref: '/mark2.svg', // Замените на URL вашего изображения
                         iconImageSize: [40, 40], // Размер изображения
                         iconImageOffset: [-15, -15] // Смещение изображения
                     }}
                 />
-      </Map>
-    </YMaps>
-  );
+            </Map>
+        </YMaps>
+    );
 };

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.footer {
+    margin: 0;
+    background-color: #ffffff;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+li {
+    list-style-type: none;
+}
+
+.container {
+    font-weight: 500;
+    padding: 12px 32px 12px 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* .right-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+} */
+
+.button_header {
+    margin-left: 20px;
+    padding: 14px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFB752;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1.7px solid #FFB752;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button_header:hover {
+    background-color: #FFB752;
+    color: #CE401C;
+}
+
+.special_button {
+    margin-left: 20px;
+    padding: 16px 30px 16px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #CE401C;
+    text-decoration: none;
+    background-color: #FFB752;
+    border-radius: 50px;
+    border: 0px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.special_button:hover {
+    padding: 16px 29px 16px 29px;
+    font-weight: 600;
+    background-color: #FFB752;
+    color: #CE401C;
+}
