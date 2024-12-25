@@ -1,11 +1,12 @@
 .container {
     background-color: #ffffff;
     padding-bottom: 30px;
+    height: 100vh;
 }
 
 .container h1 {
     font-size: 42px;
-    color: #ce401c;
+    color: #353AAC;
     margin-bottom: 50px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -49,20 +50,47 @@
 .gradient {
     pointer-events: none;
     position: absolute;
-    width: 770px;
-    height: 561px;
-    right: 135px;
-    top: -90px;
     z-index: -1;
     object-fit: cover;
 }
 
 .gradient1 {
     position: absolute;
+    right: -377px;
+    top: -110px;
 }
 
 
 
 .gradient2 {
     position: absolute;
+    right: -377px;
+    top: -190px;
 }
+
+
+.loading {
+    color: black ;
+    border-radius: 50%;
+    border: 5px solid #f3f3f3;
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+  
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+

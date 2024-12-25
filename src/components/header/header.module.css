@@ -31,40 +31,40 @@ li {
 
 .button_header {
     margin-left: 20px;
-    padding: 14px 25px;
+    padding: 12px 25px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 500;
-    color: #FFB752;
+    color: #F78E48;
     text-decoration: none;
     background-color: transparent;
-    border: 1.7px solid #FFB752;
+    border: 1.7px solid #F78E48;
     border-radius: 50px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .button_header:hover {
-    background-color: #FFB752;
-    color: #CE401C;
+    background-color: #FFE3CA;
+    color: #F78E48;
 }
 
 .special_button {
     margin-left: 20px;
-    padding: 16px 30px 16px 30px;
+    padding: 14px 30px 14px 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 500;
-    color: #CE401C;
+    color: #F78E48;
     text-decoration: none;
-    background-color: #FFB752;
+    background-color: #FFE3CA;
     border-radius: 50px;
     border: 0px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .special_button:hover {
-    padding: 16px 29px 16px 29px;
+    padding: 14px 29px 14px 29px;
     font-weight: 600;
-    background-color: #FFB752;
-    color: #CE401C;
+    background-color: #FFE3CA;
+    color: #F78E48;
 }

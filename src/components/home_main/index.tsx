@@ -21,7 +21,7 @@ export const HomeMain = () => {
 
             <div className={styles.content}>
                 <div className={styles.image}>
-                    <img src="img1.svg" alt="Landmarks" />
+                    <img src="main_img.png" alt="Landmarks" />
                     {/* <div className={styles.info_cards}>
                         <div className={styles.info_card}>Info</div>
                         <div className={styles.info_card}>Info</div>

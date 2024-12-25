@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #f1f1f1;
     border-radius: 12px;
     overflow: hidden;
     width: 278px;
@@ -15,7 +15,7 @@
     width: 100%;
     height: 100px;
     /* object-fit: cover; */
-    border-radius: 12px;
+    /* border-radius: 12px 0px 0px 0px; */
 }
 
 
@@ -25,16 +25,16 @@
     padding: 13px 0px;
     font-size: 1em;
     font-weight: 500;
-    color: #CE401C;
+    color: #f1f1f1;
     text-decoration: none;
-    background-color: #FFB752;
+    background-color: #94B0ED;
     border-radius: 30px;
     border: 0px;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
-    background-color: #CE401C;
+    background-color: #353AAC;
     color: #f1f1f1;
 }
 

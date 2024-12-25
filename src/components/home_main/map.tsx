@@ -10,17 +10,17 @@ export const YandexMap = ({ coordinates }: { coordinates: [number, number] }) =>
     useEffect(() => {
         setMapState({
             center: coordinates,
-            zoom: 10,
+            zoom: 17,
         });
     }, [coordinates]);
 
     const mapContainerStyle = {
-        width: '600px',
-        height: '600px',
+        width: '560px',
+        height: '560px',
         borderRadius: '50px',
         overflow: 'hidden',
     };
-
+    
     return (
         <YMaps query={{ apikey: '55560862-2dbf-47f8-9076-5dd76adc09a0' }}>
             <Map
@@ -31,9 +31,9 @@ export const YandexMap = ({ coordinates }: { coordinates: [number, number] }) =>
                     geometry={coordinates}
                     options={{
                         iconLayout: 'default#image',
-                        iconImageHref: '/mark2.svg', // Замените на URL вашего изображения
-                        iconImageSize: [40, 40], // Размер изображения
-                        iconImageOffset: [-15, -15] // Смещение изображения
+                        iconImageHref: '/mark.svg',
+                        iconImageSize: [35, 35], 
+                        iconImageOffset: [-15, -15] 
                     }}
                 />
             </Map>
