@@ -24,26 +24,74 @@ interface Review {
 const reviews: Review[] = [
   {
     author: {
-      name: 'Иван Иванов',
+      name: 'John Doe',
       avatar: '/avatar.jpg'
     },
-    date: '2022-01-01',
-    text: 'Отличный сайт! Нашел много интересных мест для путешествия.',
+    date: '2023-01-01',
+    text: 'This is an amazing product! Highly recommend to everyone.',
     rating: 5,
     place: {
-      name: 'Париж, Франция'
+      name: 'New York, USA'
     }
   },
   {
     author: {
-      name: 'Мария Петрова',
+      name: 'Jane Smith',
       avatar: '/avatar.jpg'
     },
-    date: '2022-02-01',
-    text: 'Сайт помог мне найти лучшие достопримечательности в Риме.',
+    date: '2023-02-01',
+    text: 'Great quality and excellent customer service.',
     rating: 4,
     place: {
-      name: 'Рим, Италия'
+      name: 'London, UK'
+    }
+  },
+  {
+    author: {
+      name: 'Alice Johnson',
+      avatar: '/avatar.jpg'
+    },
+    date: '2023-03-01',
+    text: 'I am very satisfied with my purchase. Will buy again.',
+    rating: 5,
+    place: {
+      name: 'Sydney, Australia'
+    }
+  },
+  {
+    author: {
+      name: 'Robert Brown',
+      avatar: '/avatar.jpg'
+    },
+    date: '2023-04-01',
+    text: 'The product exceeded my expectations. Five stars!',
+    rating: 5,
+    place: {
+      name: 'Tokyo, Japan'
+    }
+  },
+  {
+    author: {
+      name: 'Emily Davis',
+      avatar: '/avatar.jpg'
+    },
+    date: '2023-05-01',
+    text: 'Fast shipping and the product is exactly as described.',
+    rating: 4,
+    place: {
+      name: 'Berlin, Germany'
+    }
+  },
+  {
+    author: {
+      name: 'Michael Wilson',
+      avatar: '/avatar.jpg'
+    },
+    date: '2023-06-01',
+    text: 'Fantastic experience from start to finish. Highly recommend.',
+    rating: 5,
+    place: {
+      name: 'Paris, France'
     }
   }
 ];
@@ -51,7 +99,7 @@ const reviews: Review[] = [
 export const Review: React.FC = () => {
   return (
     <div className={styles.review}>
-      <h2>Отзывы наших пользователей</h2>
+      <h2>User Reviews</h2>
       <Carousel reviews={reviews} />
     </div>
   );

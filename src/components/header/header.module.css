@@ -68,3 +68,8 @@ li {
     background-color: #FFE3CA;
     color: #F78E48;
 }
+
+a {
+    text-decoration: none;
+    color: #F78E48;
+}

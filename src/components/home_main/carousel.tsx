@@ -27,16 +27,24 @@ interface CarouselProps {
 
 export const Carousel: React.FC<CarouselProps> = ({ reviews }) => {
   return (
-    <CarouselProvider className={styles.carousel_cards} naturalSlideWidth={100} naturalSlideHeight={30} totalSlides={reviews.length}>
-      <ButtonNext className={styles.button_next}><img className={styles.arrow} src="/next-arrow.png" alt="next" /></ButtonNext>
-      <Slider>
-        {reviews.map((item, index) => (
-          <Slide index={index} key={index}>
-            <ReviewCard review={item} />
-          </Slide>
-        ))}
-      </Slider>
-      <ButtonBack className={styles.button_back}><img className={styles.arrow} src="/back-arrow.png" alt="back" /></ButtonBack>
-    </CarouselProvider>
+    <div className={styles.carousel_container}>
+      <CarouselProvider
+        className={styles.carousel_cards}
+        naturalSlideWidth={45}
+        naturalSlideHeight={30}
+        totalSlides={reviews.length}
+        visibleSlides={3} // Указываем, что на странице должно быть видно 3 слайда
+      >
+        <ButtonBack className={styles.button_back}><img className={styles.arrow} src="/back-arrow.png" alt="back" /></ButtonBack>
+        <Slider className={styles.slider}>
+          {reviews.map((item, index) => (
+            <Slide index={index} key={index} className={styles.slide}>
+              <ReviewCard review={item} />
+            </Slide>
+          ))}
+        </Slider>
+        <ButtonNext className={styles.button_next}><img className={styles.arrow} src="/next-arrow.png" alt="next" /></ButtonNext>
+      </CarouselProvider>
+    </div>
   );
 };

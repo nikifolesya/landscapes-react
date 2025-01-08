@@ -25,20 +25,20 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
     <div className={styles.review_card}>
       <div className={styles.review_header}>
         <img src={review.author.avatar} alt={review.author.name} className={styles.avatar} />
-        <div>
+        <div className={styles.review_author}>
           <h3>{review.author.name}</h3>
           <p>{review.date}</p>
         </div>
       </div>
       <p className={styles.review_text}>{review.text}</p>
       <div className={styles.review_rating}>
-        <span>Рейтинг: {review.rating}/5</span>
-        {[...Array(5)].map((_, i) => (
+        <span>Rating: {review.rating}/5 </span>
+        {/* {[...Array(5)].map((_, i) => (
           <i
             key={i}
             className={`fa fa-star${review.rating > i ? ' checked' : ''}`}
           />
-        ))}
+        ))} */}
       </div>
       <p className={styles.review_place}>{review.place.name}</p>
     </div>

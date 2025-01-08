@@ -2,114 +2,117 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* review.module.css */
 .review {
-  padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
+  height: 50vh;
 }
 
 .review h2 {
-  margin-bottom: 20px;
-}
-
-.carousel-provider {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Установите максимальную ширину по вашему усмотрению */
-  margin: 0 auto;
-}
-
-.slider {
-  width: 100%;
-}
-
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.button-back,
-.button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.button-back {
-  left: 10px;
-}
-
-.button-next {
-  right: 10px;
+  font-size: 42px;
+  color: #353AAC;
+  margin-bottom: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-left: 40px;
+  
 }
 
 .review_card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1.5px solid #FFE3CA;
+  border-radius: 20px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+  background-color: #ffffff;
 }
 
 .avatar {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  border: 1.5px solid #FFE3CA;
+  width: 60px;
   object-fit: cover;
 }
 
 .review_header {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.review_author h3{
+  color: #3C4563;
+  font-size: 18px;
+}
+
+.review_author p{
+  color: #888B97;
+  font-size: 14px;
 }
 
 .review_header div {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .review_text {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #3C4563;
+  font-size: 16px;
 }
 
 .review_rating {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #3C4563;
+  font-size: 16px;
 }
 
 .review_place {
   margin-bottom: 0;
+  color: #3C4563;
+  font-size: 16px;
 }
 
 .fa-star {
-  color: #ffc107;
+  color: #d3d3d3; /* Цвет незаполненной звезды */
+  font-size: 20px;
 }
 
 .fa-star.checked {
-  color: #ffc107;
+  color: #ffd700; /* Цвет заполненной звезды */
 }
 
-.arrow {
-  height: 100px;
+.carousel_container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.carousel_cards {
+  width: 80%;
+  position: relative;
+}
+
+.slider {
+  left: 20px;
+}
+
+.slide {
+  margin: 0 0; /* Устанавливаем отступы между карточками */
 }
 
 .button_back,
 .button_next {
   position: absolute;
-  /* transform: translateY(-50%); */
+  top: 50%;
+  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 10px;
@@ -117,6 +120,14 @@
   z-index: 10;
 }
 
-.carousel_cards {
-  width: 70%;
+.button_back {
+  left: -150px; 
+}
+
+.button_next {
+  right: -140px;
+}
+
+.arrow {
+  height: 120px;
 }

@@ -1,4 +1,4 @@
-import { Header } from '../../components/header'
+import { Header } from '../../components/header/header'
 import { HomeMain } from '../../components/home_main'
 import { HomeMap } from '../../components/home_main/index_map'
 import { Footer } from '../../components/footer/footer'

@@ -7,13 +7,13 @@ export const Header = () => {
             <nav>
                 <ul className={styles.container}>
                     <li className={styles.button_header}>
-                        <a onClick={() => navigate('/')}>About us</a>
+                        <a href='#footer' onClick={() => navigate('/')}>About us</a>
                     </li>
                     <li className={styles.button_header}>
-                        <a onClick={() => navigate('/')}>Article</a>
+                        <a onClick={() => navigate('/blog')}>Blog</a>
                     </li>
                     <li className={styles.special_button}>
-                        <a onClick={() => navigate('/')}>Sign Up!</a>
+                        <a onClick={() => navigate('/login')}>Sign in</a>
                     </li>
                 </ul>
             </nav>

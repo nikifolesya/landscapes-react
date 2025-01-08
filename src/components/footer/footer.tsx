@@ -1,7 +1,10 @@
 import styles from './footer.module.css';
+import { useNavigate } from 'react-router-dom';
+
 export const Footer = () => {
+    const navigate = useNavigate();
     return (
-        <footer className={styles.footer}>
+        <footer id="footer" className={styles.footer}>
             <div className={styles.gradient}>
                 <img className={styles.gradient1} src="Vector-6.svg" alt="Left gradient 1" />
                 <img className={styles.gradient2} src="Vector-5.svg" alt="Left gradient 2" />
@@ -28,10 +31,10 @@ export const Footer = () => {
                         <a href="">Landscapes</a>
                     </div>
                     <div className={styles.article}>
-                        <h1>Article</h1>
-                        <a href="">New Article</a>
-                        <a href="">Popular Article</a>
-                        <a href="">Most Read</a>
+                        <h1>Blog</h1>
+                        <a href="#blog" onClick={() => navigate('/blog')}>New Blog Posts</a>
+                        <a href="#blog" onClick={() => navigate('/blog')}>Popular Posts</a>
+                        <a href="#blog" onClick={() => navigate('/blog')}>Most Viewed</a>
                     </div>
                     <div className={styles.contact}>
                         <h1>Contact</h1>
