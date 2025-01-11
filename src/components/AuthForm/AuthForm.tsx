@@ -1,23 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import Modal from 'react-modal';
 import { LoginForm } from './LoginForm';
 import { SignUpForm } from './SignUpForm';
 import styles from './auth_form.module.css';
 
-// Modal.setAppElement('#root'); // Убедитесь, что это соответствует вашему корневому элементу
+
 
 export const AuthForm: React.FC = () => {
-  // const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isSignUp, setIsSignUp] = useState(true);
   const navigate = useNavigate();
-  // const openModal = () => {
-  //   setModalIsOpen(true);
-  // };
-
-  // const closeModal = () => {
-  //   setModalIsOpen(false);
-  // };
 
   return (
     <div className={styles.content}>

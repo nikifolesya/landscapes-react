@@ -32,7 +32,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
       </div>
       <p className={styles.review_text}>{review.text}</p>
       <div className={styles.review_rating}>
-        <span>Rating: {review.rating}/5 </span>
+        <span>⭐️ {review.rating}/5</span>
         {/* {[...Array(5)].map((_, i) => (
           <i
             key={i}
@@ -40,7 +40,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
           />
         ))} */}
       </div>
-      <p className={styles.review_place}>{review.place.name}</p>
+      <p className={styles.review_place}>📍{review.place.name}</p>
     </div>
   );
 };

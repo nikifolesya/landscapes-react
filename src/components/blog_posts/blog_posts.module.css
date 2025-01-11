@@ -29,7 +29,7 @@
 
 .post {
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid #E0E0E0;
   overflow: hidden;
   width: 350px;
@@ -60,7 +60,7 @@
 
 .category {
   display: block;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   background: #ffffff;
   color: #F78E48;
   text-align: center;
@@ -69,8 +69,6 @@
 }
 
 .readMore {
-  padding: 5px 0 10px 0;
-  display: block;
   color: #888B97;
   text-decoration: none;
   font-weight: 500;

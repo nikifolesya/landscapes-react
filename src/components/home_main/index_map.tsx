@@ -51,8 +51,7 @@ export const HomeMap = () => {
                 </div>
                 <div className={styles.cards}>
                     <div className={styles.gradient}>
-                        <img className={styles.gradient1} src="Vector-3.svg" alt="Red gradient" />
-                        {/* <img className={styles.gradient2} src="Vector-4.svg" alt="Orange gradient" /> */}
+                        <img className={styles.gradient1} src="Vector-3.svg" alt="gradient" />
                     </div>
                     {landmarks.map((landmark, index) => (
                         <Card

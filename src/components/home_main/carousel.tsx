@@ -33,7 +33,7 @@ export const Carousel: React.FC<CarouselProps> = ({ reviews }) => {
         naturalSlideWidth={45}
         naturalSlideHeight={30}
         totalSlides={reviews.length}
-        visibleSlides={3} // Указываем, что на странице должно быть видно 3 слайда
+        visibleSlides={3} 
       >
         <ButtonBack className={styles.button_back}><img className={styles.arrow} src="/back-arrow.png" alt="back" /></ButtonBack>
         <Slider className={styles.slider}>

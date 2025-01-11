@@ -10,6 +10,7 @@
 .review {
   background-color: #ffffff;
   height: 50vh;
+  padding-top: 100px;
 }
 
 .review h2 {
@@ -78,12 +79,12 @@
 }
 
 .fa-star {
-  color: #d3d3d3; /* Цвет незаполненной звезды */
+  color: #d3d3d3; 
   font-size: 20px;
 }
 
 .fa-star.checked {
-  color: #ffd700; /* Цвет заполненной звезды */
+  color: #ffd700; 
 }
 
 .carousel_container {
@@ -105,7 +106,7 @@
 }
 
 .slide {
-  margin: 0 0; /* Устанавливаем отступы между карточками */
+  margin: 0 0; 
 }
 
 .button_back,

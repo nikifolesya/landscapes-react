@@ -60,6 +60,7 @@ li {
     border-radius: 50px;
     border: 0px;
     transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
 .special_button:hover {
@@ -72,4 +73,5 @@ li {
 a {
     text-decoration: none;
     color: #F78E48;
+    cursor: pointer;
 }

@@ -14,33 +14,33 @@
 }
 
 .content {
-    text-align: center; /* Центрируем весь контент */
+    text-align: center; 
     width: 100vw;
     background-color: #ffffff;
     display: flex;
-    flex-direction: row; /* Размещаем блоки в строку */
-    justify-content: space-between; /* Разделяем на равное расстояние */
-    align-items: center; /* Выравниваем по вертикали */
-    gap: 0px; /* Отступ между блоками */
-    height: 80vh; /* Растягиваем контейнер на высоту экрана */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 0px; 
+    height: 80vh;
 }
 
 .yandexmap {
     margin-left: 80px;
-    flex: 1; /* Карта занимает равное пространство */
+    flex: 1; 
     border-radius: 50px;
-    max-width: 50%; /* Ограничиваем ширину карты */
+    max-width: 50%; 
 }
 
 .cards {
     margin-right: 50px;
-    flex: 1; /* Карточки занимают равное пространство */
+    flex: 1; 
     display: flex;
-    flex-direction: row; /* Карточки в ряд */
-    flex-wrap: wrap; /* Переносим карточки на следующую строку при необходимости */
-    justify-content: space-evenly; /* Равномерное распределение карточек */
-    gap: 5px; /* Расстояние между карточками */
-    max-width: 50%; /* Ограничиваем ширину */
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    gap: 5px;
+    max-width: 50%; 
     position: relative;
     z-index: 1;
 }

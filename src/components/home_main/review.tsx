@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './review.module.css';
 import { Carousel } from './carousel';
 
-// Типы для данных отзыва
 interface Author {
   name: string;
   avatar: string;
@@ -20,7 +19,6 @@ interface Review {
   place: Place;
 }
 
-// Пример данных для отзывов
 const reviews: Review[] = [
   {
     author: {
