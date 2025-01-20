@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Blog from './pages/Blog/Blog';
 import Login from './pages/Login/Login';
-// import About from './pages/About/';
 
 
 

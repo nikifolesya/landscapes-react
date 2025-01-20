@@ -1,7 +1,7 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { ReviewCard } from './reviewCard';
+import { ReviewCard } from './ReviewCard';
 import styles from './review.module.css';
 
 interface Author {

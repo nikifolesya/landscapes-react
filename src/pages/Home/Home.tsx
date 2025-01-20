@@ -1,8 +1,7 @@
-import { Header } from '../../components/header/header'
-import { HomeMain } from '../../components/home_main'
-// import { HomeMap } from '../../components/home_main/index_map'
-import { Footer } from '../../components/footer/footer'
-import { Review } from '../../components/home_main/review'
+import { Header } from '../../components/Header/header'
+import { MainWindow } from '../../components/MainWindow/MainWindow'
+import { Footer } from '../../components/Footer/footer'
+import { Review } from '../../components/ReviewCarousel/review'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
@@ -10,8 +9,7 @@ const Home = () => {
     return(
         <>
             <Header/> 
-            <HomeMain/> 
-            {/* <HomeMap/>  */}
+            <MainWindow/> 
             <Review/>
             <Footer/> 
         </>

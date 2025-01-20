@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CustomDropdown } from '../CustomDropdown/CustomDropdown';
 import { BlogPost } from './post';
 import styles from './blog_posts.module.css';
 
@@ -56,11 +57,36 @@ const blogPosts: BlogPostData[] = [
 ];
 
 export const BlogPosts: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+
+  const handleCategoryChange = (option: { value: string; label: string }) => {
+    setSelectedCategory(option.value);
+  };
+
+  const filteredPosts = selectedCategory === 'All'
+    ? blogPosts
+    : blogPosts.filter(post => post.category === selectedCategory);
+
+  const categories = [{ value: 'All', label: 'All' }, ...Array.from(new Set(blogPosts.map(post => post.category))).map(category => ({
+    value: category,
+    label: category
+  }))];
+
+
+
   return (
     <div id='blog' className={styles.blogPosts}>
       <h1>News and Updates</h1>
+      <div className={styles.filterContainer}>
+        {/* <label htmlFor="categoryFilter">Filter by category:</label> */}
+        <CustomDropdown
+          options={categories}
+          value={selectedCategory}
+          onChange={handleCategoryChange}
+        />
+      </div>
       <div className={styles.posts}>
-        {blogPosts.map(post => (
+        {filteredPosts.map(post => (
           <BlogPost
             key={post.id}
             id={post.id}
